@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html{
+    font-size: 62.5%;
+    /* font-size: 20px; */
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    margin:0;
+}
+
+.main_menu{
+    background-color: var(--main-bg);
+}
+
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.navbar-toggler{
+    background-color: grey;
+}
+
+.navbar li{
+    margin-left: 2rem;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: var(--main-color);
+}
+
+@keyframes rot{
+    0%{
+        transform :rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.main_header_left{
+    height: 70rem;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .main_header{
+    border: 1px solid black;
+} */
+
+.main_header_left p{
+    font-size: 2.5rem;
+    /* border: 1px solid black; */
+}
+
+.main_header_left h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+
+.main_header_right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.temp_form{
+    width: 60%;
+    position: relative;
+    margin: 7rem auto;
+}
+
+.temp_form input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+
+::placeholder{
+    color: #bfc1c8;
+}
+
+.temp_form input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.6rem;
+}
+.temp_form input[type="submit"]:hover{
+    cursor: pointer;
+    color: #009ad8;
+    background-color: #fff;
+}
+
+.tempinfo{
+    width: 40rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    padding: 1rem;
+    /* border: 1px solid black; */
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    
+}
+
+.top_layer p{
+    color: #fff;
+    font-weight: 300;  
+    padding: 2rem;
+}
+
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.main_layer #city_name{
+    padding: 2rem 0;
+    color: #bfc1c8;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.main_layer .middle_layer{
+    display: flex;
+    justify-items: space-around;
+    color: #fff;
+}
+
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa{
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.fa{
+    color:#0097e6;
+    margin-left: 2rem;
+}
+.fas{
+    margin-left: 2rem;
+}
+
+.sup{
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+
+.data_hide{
+    visibility: hidden;
+    transition:  all 0.3s linear;
+}
+
+.errimg img{
+    width: 60rem;
+    height: 30rem;
+}
+
+.main_header_left .text-clr{
+   color: var(--main-color);
+}
+
+/* .abc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.main_header_left button{
+    border:none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    background-color: #009ad8;
+    color: white;
+    outline:none;
+    font-size: 12px;
+}
+
+.main_header_left button:hover{
+    /* box-shadow: 0 8px 6px -6px var(--main-color); */
+    /* color: #009ad8; */
+    background-color: #0c8cd1;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin: auto;
+    margin-top: 3rem;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 7rem;
+    font-size: 1.4rem;
+}
+
+@media(max-width:768px){
+    .main_header_left{
+        height: auto;
+        margin:5rem 0;
+    }
+    .main_header_left p{
+        font-size: 2rem;
+    }
+    .main_header_right{
+        height: auto;
+        margin-top: 3rem 0; 
+    }
+    .temp_form{
+        width: auto;
+    }
+    .tempinfo{
+        width: auto;
+    }
+}
+
+.navbar-toggler-icon {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/56/56763.png');
+}
+
+
